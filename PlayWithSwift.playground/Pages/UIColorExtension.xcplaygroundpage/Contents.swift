@@ -3,6 +3,8 @@
 import UIKit
 import XCPlayground
 
+// You can download this Swift file to use in your project directly: https://www.dropbox.com/s/g565i8rq8silmr9/UIColor%2BExtension.swift?dl=0
+
 extension UIColor {
     
     // You can directly make some static color using this way.
