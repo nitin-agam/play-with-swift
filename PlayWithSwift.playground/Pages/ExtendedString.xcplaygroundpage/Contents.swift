@@ -1,6 +1,4 @@
-//: [Previous](@previous)
 
-import Foundation
 import UIKit
 
 // You can download this Swift file to use in your project directly: https://www.dropbox.com/s/gqcb04qm3tbe16v/ExtendedString.swift?dl=0

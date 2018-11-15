@@ -4,5 +4,6 @@
         <page name='Random'/>
         <page name='ExtendedColor'/>
         <page name='ExtendedString'/>
+        <page name='HighOrderFunction'/>
     </pages>
 </playground>
