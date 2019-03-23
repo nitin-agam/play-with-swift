@@ -5,6 +5,18 @@ import UIKit
 
 extension String {
     
+    // MARK: - Variables
+    var wordCount: Int {
+        
+        // Here w+, it includes a alphanumeric character, underscore. Or you can say this equivalent to [a-zA-Z0-9]
+        // For W+, it includes a non-alphanumeric, non-underscore character.
+        let expression = try? NSRegularExpression(pattern: "\\w+")
+        return expression?.numberOfMatches(in: self,
+                                           range: NSRange(location: 0,
+                                                          length: self.utf16.count)) ?? 0
+    }
+    
+    
     // MARK: - Instance Methods
     func isValidEmail() -> Bool {
         let emailRegression = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
@@ -68,4 +80,18 @@ extension String {
     static func getLength(_ message: Any?) -> Int {
         return String.getString(message).trimWhiteSpaceAndNewLine().count
     }
+    
+    static func getReveresedWords(sentence: String) -> String {
+        
+        // If string is empty do not perform anything.
+        if sentence.isEmpty { return "" }
+        
+        
+        
+        
+        return ""
+    }
 }
+
+let string = "This_is a test string 000"
+print("\(string): \(string.wordCount)")
